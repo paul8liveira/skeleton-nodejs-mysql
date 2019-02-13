@@ -1,0 +1,25 @@
+{
+    "ENV": "production",
+    "PORT": "3000",
+    "DATABASE": {
+        "USER": "skeleton@solution-skeleton-db",
+        "PASSWORD": "p3c3g3Solution",
+        "NAME": "skeleton",
+        "TIMEZONE": "utc",
+        "MULTIPLESTATEMENTS": true,
+        "CONNECTION_LIMIT": 100,
+        "HOST": "solution-skeleton-db.mysql.database.azure.com",
+        "SSL": true,
+        "LOGGING": false
+    },    
+    "CORS": {
+        "ALLOW": "*"
+    },
+    "INSIGHTS": {
+        "INSTRUMENTATION_KEY": "a7e99f25-7ccf-4fef-a3de-72b2ca3aad2b",
+        "SAMPLING_PERCENTAGE": 100,
+        "ROLE": "servico-mysql",
+        "DISABLE": true
+    },
+    "JWT_SECRET": ""
+}

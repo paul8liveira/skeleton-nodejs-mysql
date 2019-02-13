@@ -1,0 +1,43 @@
+{
+  "name": "skeleton-nodejs-mysql-service",
+  "version": "0.0.0",
+  "description": "Skeleton microservice project for NodeJs with MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "build": "gulp",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:integration": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha --opts test/integration/mocha.opts test/integration/**/*_spec.js || true",
+    "test:unit": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha --opts test/unit/mocha.opts test/unit/**/*_spec.js || true",
+    "docker-mysql": "docker run -p 3306:3306 --name mysql-dev -e MYSQL_ROOT_PASSWORD=pecege -d mysql:5.7.25"
+  },
+  "author": "PECEGE TI",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.10",
+    "sinon": "^7.2.3",
+    "supertest": "^3.4.2"
+  },
+  "dependencies": {
+    "applicationinsights": "^1.1.0",
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "i18n": "^0.8.3",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose-unique-validator": "^2.0.2",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
+  }
+}

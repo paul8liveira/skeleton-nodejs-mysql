@@ -1,0 +1,25 @@
+{
+    "ENV": "development",
+    "PORT": "3000",
+    "DATABASE": {
+        "USER": "root",
+        "PASSWORD": "pecege",
+        "NAME": "skeleton",
+        "TIMEZONE": "utc",
+        "MULTIPLESTATEMENTS": true,
+        "CONNECTION_LIMIT": 100,
+        "HOST": "localhost",
+        "SSL": false,
+        "LOGGING": true
+    },    
+    "CORS": {
+        "ALLOW": "*"
+    },
+    "INSIGHTS": {
+        "INSTRUMENTATION_KEY": "a7e99f25-7ccf-4fef-a3de-72b2ca3aad2b",
+        "SAMPLING_PERCENTAGE": 100,
+        "ROLE": "servico-mysql",
+        "DISABLE": true
+    },
+    "JWT_SECRET": ""
+}
